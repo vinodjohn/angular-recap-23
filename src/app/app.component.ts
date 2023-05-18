@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-recap23';
+  title = 'Taxi Rental';
+
+  myCarCollection = ["Benz GLS", "BMW XM", "Audi A8", "Tesla Model X"];
 }
+

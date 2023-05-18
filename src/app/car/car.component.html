@@ -1,0 +1,13 @@
+<p>car works!</p>
+<h2>Car code substituted here!</h2>
+
+
+<h3>{{ favCar }} on minu lemmikauto!</h3>
+
+<button (mouseover)="toggleShowCollection()">Show/Hide Collection</button>
+
+<div *ngIf="isShowCollection">
+  <ul>
+    <li *ngFor="let car of myCarCollection">{{ car }}</li>
+  </ul>
+</div>
