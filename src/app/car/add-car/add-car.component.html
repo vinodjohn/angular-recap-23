@@ -1,0 +1,14 @@
+<h1>Add car</h1>
+
+<div id="carList">
+  <ul>
+    <li *ngFor="let car of cars">{{ car.model }} - {{ car.brand}}</li>
+  </ul>
+</div>
+<div id="carFormDiv">
+  <form id="carForm" #carForm="ngForm" (ngSubmit)="addCar(carForm)">
+    <input type="text" name="name" id="name" [(ngModel)]="name" />
+    <input type="text" name="manufacturer" id="manufacturer" [(ngModel)]="manufacturer" />
+    <button type="submit">Add car</button>
+  </form>
+</div>
